@@ -17,7 +17,7 @@ const portfolio = {
         "Python",   // TODO: Replace with your actual skills
         "R",  // TODO: Add more skills
         "Molecular Modeling",    // TODO: Students should have at least 5 skills
-        "Protein Production and Purification",
+        "Protein Biochemistry",
         "HTML/CSS/JavaScript"
         // TODO: Add more skills - aim for 5-7 skills total
     ],
@@ -69,12 +69,9 @@ console.log("Number of projects:", portfolio.projects.length);
 // TODO: Students will learn to access nested properties
 console.log("Email:", portfolio.owner.email);
 console.log("Second project:", portfolio.projects[1]);
-// console.log("Available for freelance?", portfolio.availability.freelance);
+console.log("Available for freelance?", portfolio.availability.freelance);
 
 // TODO: Students will create summary strings using template literals
-let summary = `${portfolio.owner.name} is a ${portfolio.owner.title} with ${portfolio.skills.length} skills.`;
-console.log("Summary:", summary);
-
 console.log("Portfolio Summary:");
 console.log(`${portfolio.owner.name} has ${portfolio.skills.length} skills`);
 console.log(`and ${portfolio.projects.length} projects`);
