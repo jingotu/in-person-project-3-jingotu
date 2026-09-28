@@ -161,7 +161,7 @@ section h2 {
     color: #003262;
 }
 
-.contact-form input,
+.contact-form input:not([type="radio"]):not([type="checkbox"]),
 .contact-form select,
 .contact-form textarea {
     width: 100%;
@@ -171,6 +171,17 @@ section h2 {
     border-radius: 5px;
     font-size: 1rem;
     transition: border-color 0.3s;
+}
+
+.contact-form input[type="radio"],
+.contact-form input[type="checkbox"] {
+    width: auto;
+    margin-right: 0.5rem;
+}
+
+.contact-form fieldset label {
+    display: inline;
+    margin-right: 1rem;
 }
 
 .contact-form input:focus,
